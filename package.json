@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js && npm install && node asis.js && la -la"
+    "start": "node index.js && npm install && node asis.js && && ls -la && cd wkwk && ls -la"
   },
   "keywords": [],
   "author": "",

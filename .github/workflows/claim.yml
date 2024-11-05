@@ -32,11 +32,12 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: 3.12
-    - name: Run
+    - name: Install
       run: |
         cd wkwk
         python -m pip install --upgrade pip wheel setuptools
         pip install -r requirements.txt
+        sudo apt install -y ffmpeg
         sudo apt install -y google-chrome-stable
         seleniumbase install chromedriver
         sudo apt install -y xvfb
